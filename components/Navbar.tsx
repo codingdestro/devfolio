@@ -28,7 +28,7 @@ const LinkLists = [
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full shadow-md shadow-blue-100">
+    <div className="fixed w-full shadow-md shadow-blue-100 bg-white">
       <div className="flex items-center justify-between w-full p-3 border-b border-b-blue-400">
         <div className="font-bold text-lg">CodingDestro</div>
         <div className="flex items-center justify-around gap-x-2">
