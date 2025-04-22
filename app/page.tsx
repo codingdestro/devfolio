@@ -1,14 +1,16 @@
 import Hero from "@/components/heroSection/Hero";
-import Education from "@/components/education"
+import Education from "@/components/education";
 import About from "@/components/About";
-import GithubStats from "@/components/GithubStats";
+import Badges from "@/components/Badges";
+// import GithubStats from "@/components/GithubStats";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen hero-pattern w-full">
-        <Hero/>
-        <About/>
-        <Education/>
-        <GithubStats/>
+      <Hero />
+      <Badges/>
+      <About />
+      <Education />
+      {/* <GithubStats/> */}
     </div>
   );
 }

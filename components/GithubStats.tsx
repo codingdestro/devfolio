@@ -13,7 +13,6 @@ const GithubStats = () => {
             alt="GitHub Streak"
             width={440}
             height={320}
-
           />
         </Link>
       </div>

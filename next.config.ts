@@ -2,9 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: [
-      'streak-stats.demolab.com',
-    ],
+    dangerouslyAllowSVG: true,
+    domains: ["streak-stats.demolab.com", "img.shields.io"],
   },
 };
 

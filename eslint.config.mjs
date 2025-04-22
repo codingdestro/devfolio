@@ -11,6 +11,12 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "jsx-a11y/img-redundant-alt": "off",
+      "next/no-img-element": "off"
+    }
+  }
 ];
 
 export default eslintConfig;
