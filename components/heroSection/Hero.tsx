@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 min-h-[80vh] gap-x-[340px] w-full mb-8">
+      <div className="grid grid-cols-2 min-h-[90vh] gap-x-[340px] w-full mb-8">
         <div className="flex flex-col justify-center items-center p-5 gap-5 ">
           <div
             className="text-5xl font-bold text-primary uppercase flex items-center gap-1"
