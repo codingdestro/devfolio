@@ -28,10 +28,10 @@ const Home = () => {
   }, []);
   return (
     <>
-      <h1 className="font-bold text-4xl mt-5 mb-10 text-center">Education</h1>
+      <h1 className="font-bold text-4xl mt-5 text-center">Education</h1>
 
       <div
-        className="min-h-screen w-4xl p-10 box-border flex flex-col gap-8 items-center"
+        className="w-4xl p-10 box-border flex flex-col gap-8 items-center"
         ref={Items}
       >
         {Education.map((el, idx: number) => (
