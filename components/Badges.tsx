@@ -50,15 +50,31 @@ const badges = [
 
 const Badges = () => {
   return (
-    <div className="flex gap-4 items-center justify-center flex-wrap max-w-3xl mt-40">
-      {badges.map((badge, idx: number) => {
-        return (
-          <div key={idx}>
-            <Image alt="" src={badge} width={84} height={20}/>
+    <section className="w-full flex flex-col items-center justify-center mt-32 mb-20">
+      <h2 className="text-3xl font-bold  mb-8 tracking-tight">
+        Skills & Tools
+      </h2>
+      <div className="flex gap-4 items-center justify-center flex-wrap max-w-4xl bg-white/80 rounded-2xl shadow-lg p-8 border border-green-100">
+        {badges.map((badge, idx: number) => (
+          <div
+            key={idx}
+            className="transition-transform hover:scale-110 hover:shadow-md rounded-lg bg-gradient-to-tr from-green-50 to-green-100 p-1 flex items-center justify-center"
+            style={{ minWidth: 100, minHeight: 32 }}
+          >
+            <div className="w-[100px] h-[32px] flex items-center justify-center">
+              <Image
+                alt=""
+                src={badge}
+                width={100}
+                height={32}
+                className="object-contain rounded"
+                draggable={false}
+              />
+            </div>
           </div>
-        );
-      })}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

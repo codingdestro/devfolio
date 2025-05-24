@@ -14,7 +14,7 @@ const projects = [
     description:
       "A feature-rich calculator with scientific functions and a sleek UI.",
     tech: ["React", "Tailwind CSS", "TypeScript"],
-    link: "https://caluclator.codingdestro.fun",
+    link: "https://calculator.codingdestro.fun",
     github: "https://github.com/codingdestro/calculator",
   },
   {
