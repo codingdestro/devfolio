@@ -50,7 +50,7 @@ const badges = [
 
 const Badges = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center mt-32 mb-20">
+    <section className="w-full flex flex-col items-center justify-center mt-32 mb-20" id="skills">
       <h2 className="text-3xl font-bold  mb-8 tracking-tight">
         Skills & Tools
       </h2>
