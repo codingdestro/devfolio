@@ -5,7 +5,8 @@ import React from "react";
 
 const GithubStats = () => {
   return (
-    <>
+    <section id="github">
+    <h1 className="text-3xl font-bold">Github Stats</h1>
       <div className="flex flex-col items-center justify-center w-full py-10">
         <Link href="https://git.io/streak-stats">
           <Image
@@ -16,7 +17,7 @@ const GithubStats = () => {
           />
         </Link>
       </div>
-    </>
+    </section>
   );
 };
 

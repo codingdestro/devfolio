@@ -6,19 +6,23 @@ import { Button } from "./ui/button";
 const LinkLists = [
   {
     title: "home",
-    href: "/",
+    href: "#",
   },
   {
-    title: "codingdestro",
-    href: "/",
+    title: "about",
+    href: "#about",
   },
   {
     title: "github",
-    href: "/",
+    href: "#github",
+  },
+{
+    title: "skills",
+    href: "#skills",
   },
   {
-    title: "portfolio",
-    href: "/",
+    title: "projects",
+    href: "#projects",
   },
   {
     title: "services",

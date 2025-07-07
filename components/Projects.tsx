@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const projects = [
@@ -5,7 +6,7 @@ const projects = [
     title: "Full-Stack E-commerce Website",
     description:
       "A modern, responsive portfolio built with Vite.js, Tailwind CSS, and TypeScript.",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript"," Node.js", "MongoDB"],
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", " Node.js", "MongoDB"],
     link: "https://your-portfolio-link.com",
     github: "https://github.com/yourusername/portfolio",
   },
@@ -18,7 +19,7 @@ const projects = [
     github: "https://github.com/codingdestro/calculator",
   },
   {
-    title: "Tdolist web app",
+    title: "Todolist web app",
     description:
       "A simple and intuitive to-do list application to manage tasks efficiently.",
     tech: ["React", "Tailwind CSS", "TypeScript"],
@@ -55,14 +56,20 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4 mt-auto">
+                <div className="flex gap-4 justify-end mt-auto">
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline font-semibold"
                   >
-                    Live Demo
+                    <Image
+                      width={24}
+                      height={24}
+                      src="/logo/web.png"
+                      alt="Link Icon"
+                      className=""
+                    />
                   </a>
                   <a
                     href={project.github}
@@ -70,7 +77,13 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline font-semibold"
                   >
-                    GitHub
+                    <Image
+                      width={24}
+                      height={24}
+                      src="/logo/gb.png"
+                      alt="Link Icon"
+                      className=""
+                    />
                   </a>
                 </div>
               </div>
