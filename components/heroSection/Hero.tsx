@@ -3,26 +3,9 @@ import { animate, stagger } from "animejs";
 import { useEffect, useRef } from "react";
 import Profile from "./Profile";
 import Link from "next/link";
-import Image from "next/image";
+import SocialLinks from "../SocialLinks";
 
 const NAME = "Mohd anas";
-const socialLinks = [
-  {
-    url: "/https://github.com/codingdestro",
-    logo: "/logo/github.png",
-    name: "Github",
-  },
-  {
-    url: "/https://github.com/codingdestro",
-    logo: "/logo/linkedin.png",
-    name: "LinkedIn",
-  },
-  {
-    url: "/https://github.com/codingdestro",
-    logo: "/logo/twitter.png",
-    name: "Twitter",
-  },
-];
 
 const Hero = () => {
   const nameRef = useRef<HTMLDivElement>(null);
@@ -45,7 +28,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 min-h-[80vh] gap-x-[200px] w-full mb-">
+      <div className="grid grid-cols-2 min-h-[90vh] gap-x-[200px] w-full mb-">
         <div className="flex flex-col justify-center items-center p-5 gap-5 ">
           <div
             className="text-5xl font-bold text-primary uppercase flex items-center gap-1"
@@ -85,32 +68,10 @@ const Hero = () => {
               </p>
             </Link>
           </div>
+          <SocialLinks />
         </div>
 
         <Profile />
-      </div>
-      <div className="flex items-center justify-center gap-5 w-full mt-">
-        {socialLinks.map((el, idx: number) => (
-          <Link
-            key={idx}
-            href={el.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
-          >
-            <div className="rounded-full bg-gradient-to-tr from-green-400 to-green-600 p-[2px] transition-transform transform hover:scale-110 shadow-lg">
-              <div className="bg-white rounded-full p-4 flex items-center justify-center transition-colors group-hover:bg-green-50">
-                <Image
-                  src={el.logo}
-                  width={36}
-                  height={36}
-                  alt={el.name}
-                  className="transition-transform group-hover:scale-110"
-                />
-              </div>
-            </div>
-          </Link>
-        ))}
       </div>
     </div>
   );
