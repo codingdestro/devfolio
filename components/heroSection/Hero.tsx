@@ -57,12 +57,12 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center justify-center gap-x-5 mt-5">
-            <Link href={"/"}>
+            <Link href={"/resume.pdf"} target="_blank">
               <p className="px-5 py-3 rounded-full min-w-36 bg-secondary text-center text-white">
                 View Resume
               </p>
             </Link>
-            <Link href={"/"}>
+            <Link href={"mailto:localmail.office@gmail.com"} target="_blank">
               <p className="px-5 py-3 rounded-full min-w-36 text-center bg-black text-white">
                 Contact Me
               </p>
