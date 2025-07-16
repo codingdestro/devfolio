@@ -33,7 +33,7 @@ const LinkLists = [
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <div className="p-5 flex justify-between items-center">
+    <div className="p-5 flex justify-between items-center shadow-md border-b">
       {/* brand logo */}
       <div>
         <Link href={"/"} className="text-3xl font-semibold font-display">

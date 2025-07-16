@@ -1,79 +1,93 @@
 "use client";
-import { animate, stagger } from "animejs";
-import { useEffect, useRef } from "react";
-import Profile from "./Profile";
-import Link from "next/link";
-import SocialLinks from "../SocialLinks";
 
-const NAME = "Mohd anas";
+import Image from "next/image";
+import { Facebook, Github, Twitter, Instagram } from "lucide-react";
+import Link from "next/link";
+
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/mohd-anas/",
+    icon: <Facebook className="text-2xl" />,
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/codingdestro",
+    icon: <Github className="text-2xl " />,
+  },
+  {
+    name: "Instagram",
+    url: "https://github.com/codingdestro",
+    icon: <Instagram className="text-2xl " />,
+  },
+  {
+    namespace: "Twitter",
+    url: "https://twitter.com/codingdestro",
+    icon: <Twitter className="text-2xl" />,
+  },
+];
 
 const Hero = () => {
-  const nameRef = useRef<HTMLDivElement>(null);
-  const subHeading = useRef<HTMLParagraphElement>(null);
-  useEffect(() => {
-    const spans = nameRef.current!.children;
-    animate(spans, {
-      duration: 2000,
-      opacity: [0, 1],
-      delay: stagger(100),
-    });
-
-    animate(subHeading.current!, {
-      opacity: [0, 1],
-      translateY: [10, 0],
-      duration: 1500,
-      ease: "inOut",
-    });
-  }, []);
-
   return (
-    <div>
-      <div className="grid grid-cols-2 min-h-[90vh] gap-x-[200px] w-full mb-">
-        <div className="flex flex-col justify-center items-center p-5 gap-5 ">
-          <div
-            className="text-5xl font-bold text-primary uppercase flex items-center gap-1"
-            ref={nameRef}
-          >
-            {Array.from(NAME).map((el, idx) => {
-              if (el)
-                return (
-                  <span className="opacity-0" key={idx}>
-                    {el}
-                  </span>
-                );
-              else <span className="px-2"></span>;
-            })}
+    <section className="min-h-[90vh] w-full flex items-center justify-center">
+      <div className="flex flex-col md:flex-row gap-y-5 items-center justify-center md:justify-between max-w-7xl w-full p-3">
+        <div>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-display font-bold uppercase bg-gradient-to-r from-primary to-creative-purple text-transparent bg-clip-text">
+              Mohd Anas
+            </h1>
+            <h3 className="text-xl sm:text-3xl font-sans text-slate-gray">
+              A full stack web developer
+            </h3>
+            <span>
+              Specializing in React, Node.js, and Modern Web Technologies
+            </span>
+          </div>
+          {/* social links */}
+
+          <div>
+            <div className="flex gap-4 mt-4 items-center">
+              {socialLinks.map((link) => (
+                <Link
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={link.name}
+                  className="border rounded-full p-3 text-creative-purple shadow-md translate-y-0 hover:translate-y-[-2px] transition-transform duration-300 ease-in-out"
+                >
+                  {link.icon}
+                </Link>
+              ))}
+            </div>
           </div>
 
-          <div className="flex flex-col justify-start text-center gap-y-3">
-            <p ref={subHeading} className="text-md font-semibold">
-              A Full Stack Web Developer
-            </p>
-
-            <p className="max-w-[350px] text-sm text-center">
-              I build modern, responsive web apps using React, Next.js, Node.js,
-              and Tailwind CSS.
-            </p>
-          </div>
-
-          <div className="flex items-center justify-center gap-x-5 mt-5">
-            <Link href={"/api/resume"} target="_blank">
-              <p className="px-5 py-3 rounded-full min-w-36 bg-secondary text-center text-white">
-                View Resume
-              </p>
+          {/* CTA */}
+          <div>
+            <Link
+              href="/contact"
+              className="inline-block mt-6 px-6 py-3 bg-primary text-white rounded-full shadow-md hover:bg-primary-dark transition-colors duration-300 ease-in-out"
+            >
+              Contact Me
             </Link>
-            <Link href={"mailto:localmail.office@gmail.com"} target="_blank">
-              <p className="px-5 py-3 rounded-full min-w-36 text-center bg-black text-white">
-                Contact Me
-              </p>
+            <Link
+              href={"/resume"}
+              className="inline-block ml-4 px-6 py-3 border border-primary text-primary rounded-full shadow-md hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
+            >
+              View Resume
             </Link>
           </div>
-          <SocialLinks />
         </div>
-
-        <Profile />
+        <div className="overflow-hidden rounded-2xl w-sm border aspect-[1/1]">
+          <Image
+            src="/me.jpeg"
+            alt="Hero Image"
+            width={500}
+            height={500}
+            className="rounded-lg shadow-lg w-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
