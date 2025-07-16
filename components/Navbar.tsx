@@ -19,6 +19,10 @@ const LinkLists = [
   {
     title: "skills",
     href: "#skills",
+  },{
+    title:"education",
+    href: "#education",
+
   },
   {
     title: "projects",

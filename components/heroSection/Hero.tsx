@@ -47,12 +47,12 @@ const Hero = () => {
 
           <div>
             <div className="flex gap-4 mt-4 items-center">
-              {socialLinks.map((link) => (
+              {socialLinks.map((link,id) => (
                 <Link
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  key={link.name}
+                  key={id}
                   className="border rounded-full p-3 text-creative-purple shadow-md translate-y-0 hover:translate-y-[-2px] transition-transform duration-300 ease-in-out"
                 >
                   {link.icon}
