@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center justify-center gap-x-5 mt-5">
-            <Link href={"/resume.pdf"} target="_blank">
+            <Link href={"/api/resume"} target="_blank">
               <p className="px-5 py-3 rounded-full min-w-36 bg-secondary text-center text-white">
                 View Resume
               </p>

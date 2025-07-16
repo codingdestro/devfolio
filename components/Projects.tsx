@@ -37,7 +37,7 @@ const Projects = () => {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 flex flex-col"
+              className="bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
             >
               <div className="p-6 flex-2 flex flex-col">
                 <h3 className="text-xl text-center font-semibold  mb-2">
