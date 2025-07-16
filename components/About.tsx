@@ -8,6 +8,10 @@ const About = () => {
       <h2 className="text-4xl text-center md:text-5xl font-bold font-display bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-4">
         About Me
       </h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto text-center">
+        Aspiring Full-Stack Developer with a Passion for Innovation,
+        Problem-Solving, and Building Impactful Digital Solutions
+      </p>
       <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-6"></div>
       <div className="flex flex-col gap-5 mt-12">
         <div className="flex items-center justify-between gap-10">
