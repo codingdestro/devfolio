@@ -1,28 +1,32 @@
 "use client";
-
+import React from "react";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
 
 const LinkLists = [
   {
     title: "home",
-    href: "#",
+    href: "/",
   },
   {
     title: "about",
-    href: "#about",
+    href: "/#about",
   },
   {
     title: "github",
-    href: "#github",
+    href: "/#github",
   },
-{
+  {
     title: "skills",
-    href: "#skills",
+    href: "/#skills",
+  },
+  {
+    title: "education",
+    href: "/#education",
   },
   {
     title: "projects",
-    href: "#projects",
+    href: "/#projects",
   },
   {
     title: "services",
@@ -31,20 +35,69 @@ const LinkLists = [
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = React.useState(false);
   return (
-    <div className="fixed w-full shadow-md shadow-blue-100 bg-white z-50">
-      <div className="flex items-center justify-between w-full p-3 border-b border-b-blue-400">
-        <div className="font-bold text-lg">CodingDestro</div>
-        <div className="flex items-center justify-around gap-x-2">
-          {LinkLists.map((item, idx: number) => {
-            return (
-              <div key={idx} className="capitalize hover:border-b px-3">
-                <Link href={item.href}>{item.title}</Link>
-              </div>
-            );
-          })}
-        </div>
-        <Button>Contact Me</Button>
+    <div className="p-5 flex justify-between items-center shadow-md border-b">
+      {/* brand logo */}
+      <div>
+        <Link href={"/"} className="text-3xl font-semibold font-display">
+          CodingDestro
+        </Link>
+      </div>
+      {/* navigation links */}
+      <div className="gap-5 capitalize hidden md:flex">
+        {LinkLists.map((link, index) => (
+          <Link
+            key={index}
+            href={link.href}
+            className="text-lg hover:text-blue-500 transition-all duration-200 border-b border-transparent hover:border-blue-500"
+          >
+            {link.title}
+          </Link>
+        ))}
+      </div>
+
+      {/* mobile navigation */}
+      {/* Mobile navigation menu */}
+      <div className="md:hidden relative">
+        {/* Hamburger button */}
+        <button
+          className="p-2 rounded focus:outline-none cursor-pointer"
+          onClick={() => setOpen((prev) => !prev)}
+          aria-label="Toggle navigation"
+        >
+          <Menu className="w-7 h-7 text-gray-700" />
+        </button>
+        {/* Mobile menu */}
+        {open && (
+          <div className="gap-5 fixed capitalize flex flex-col items-center w-full border z-50 left-0 top-16 bg-white p-5">
+            {LinkLists.map((link, index) => (
+              <Link
+                key={index}
+                onClick={() => setOpen(false)}
+                href={link.href}
+                className="text-lg hover:text-blue-500 transition-all duration-200 border-b border-transparent hover:border-blue-500"
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        )}
+        {/* menu overlay */}
+        {open && (
+          <div
+            className="fixed inset-0 backdrop-blur-sm opacity-50 z-40"
+            onClick={() => setOpen(false)}
+          ></div>
+        )}
+      </div>
+      <div className="hidden md:flex">
+        <Link
+          href="/contact"
+          className="border rounded-lg px-6 py-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+        >
+          Contact
+        </Link>
       </div>
     </div>
   );
