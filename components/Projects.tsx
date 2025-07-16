@@ -1,41 +1,6 @@
 import React from "react";
 import { ExternalLink, Github, Code2, Star } from "lucide-react";
-
-const projects = [
-  {
-    title: "Full-Stack E-commerce Website",
-    description:
-      "A comprehensive e-commerce platform with modern UI/UX, secure payment integration, and robust backend architecture.",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "MongoDB"],
-    link: "https://your-portfolio-link.com",
-    github: "https://github.com/yourusername/portfolio",
-    status: "Completed",
-    featured: false,
-    category: "Full Stack"
-  },
-  {
-    title: "Advanced Calculator",
-    description:
-      "A feature-rich calculator with scientific functions, history tracking, and a sleek responsive UI design.",
-    tech: ["React", "Tailwind CSS", "TypeScript"],
-    link: "https://calculator.codingdestro.fun",
-    github: "https://github.com/codingdestro/calculator",
-    status: "Live",
-    featured: false,
-    category: "Frontend"
-  },
-  {
-    title: "TodoList Web App",
-    description:
-      "A simple and intuitive task management application with real-time updates and local storage persistence.",
-    tech: ["React", "Tailwind CSS", "TypeScript"],
-    link: "https://todo.codingdestro.fun",
-    github: "https://github.com/codingdestro/TodoApp",
-    status: "Live",
-    featured: false,
-    category: "Frontend"
-  },
-];
+import { projects } from "@/lib/data/projects";
 
 const Projects = () => {
   return (
@@ -52,7 +17,8 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A showcase of my development projects, from full-stack applications to interactive tools
+            A showcase of my development projects, from full-stack applications
+            to interactive tools
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-6"></div>
         </div>
@@ -63,7 +29,7 @@ const Projects = () => {
             <div
               key={idx}
               className={`group relative bg-white rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden ${
-                project.featured ? 'md:col-span-2 lg:col-span-1' : ''
+                project.featured ? "md:col-span-2 lg:col-span-1" : ""
               }`}
             >
               {/* Featured Badge */}
@@ -92,11 +58,13 @@ const Projects = () => {
                       </span>
                     </div>
                   </div>
-                  <div className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                    project.status === 'Live' 
-                      ? 'bg-green-100 text-green-700' 
-                      : 'bg-blue-100 text-blue-700'
-                  }`}>
+                  <div
+                    className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                      project.status === "Live"
+                        ? "bg-green-100 text-green-700"
+                        : "bg-blue-100 text-blue-700"
+                    }`}
+                  >
                     {project.status}
                   </div>
                 </div>
@@ -113,7 +81,9 @@ const Projects = () => {
 
                 {/* Tech Stack */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-3">Tech Stack:</h4>
+                  <h4 className="text-sm font-semibold text-gray-700 mb-3">
+                    Tech Stack:
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech, i) => (
                       <span
@@ -157,30 +127,32 @@ const Projects = () => {
             <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Code2 className="w-8 h-8 text-blue-600" />
             </div>
-            <h3 className="text-2xl font-bold text-blue-600 mb-2">{projects.length}+</h3>
+            <h3 className="text-2xl font-bold text-blue-600 mb-2">
+              {projects.length}+
+            </h3>
             <p className="text-gray-600">Projects Built</p>
           </div>
-          
+
           <div className="text-center bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
             <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <ExternalLink className="w-8 h-8 text-green-600" />
             </div>
             <h3 className="text-2xl font-bold text-green-600 mb-2">
-              {projects.filter(p => p.status === 'Live').length}+
+              {projects.filter((p) => p.status === "Live").length}+
             </h3>
             <p className="text-gray-600">Live Projects</p>
           </div>
-          
+
           <div className="text-center bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
             <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Star className="w-8 h-8 text-purple-600" />
             </div>
             <h3 className="text-2xl font-bold text-purple-600 mb-2">
-              {projects.filter(p => p.featured).length}+
+              {projects.filter((p) => p.featured).length}+
             </h3>
             <p className="text-gray-600">Featured Work</p>
           </div>
-          
+
           <div className="text-center bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Github className="w-8 h-8 text-orange-600" />
@@ -197,7 +169,8 @@ const Projects = () => {
               Interested in Working Together?
             </h3>
             <p className="text-gray-600 mb-6">
-              I&apos;m always open to discussing new opportunities and exciting projects. Let&apos;s create something amazing together!
+              I&apos;m always open to discussing new opportunities and exciting
+              projects. Let&apos;s create something amazing together!
             </p>
             <a
               href="#contact"
