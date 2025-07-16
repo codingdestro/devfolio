@@ -9,13 +9,13 @@ const skillCategories = [
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-50 dark:bg-blue-900/20",
     badges: [
-      "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
-      "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
-      "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
-      "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
-      "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-      "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
-      "https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
     ],
   },
   {
@@ -24,12 +24,13 @@ const skillCategories = [
     color: "from-green-500 to-emerald-500",
     bgColor: "bg-green-50 dark:bg-green-900/20",
     badges: [
-      "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
-      "https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white",
-      "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white",
-      "https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black",
-      "https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white",
-      "https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
     ],
   },
   {
@@ -38,9 +39,9 @@ const skillCategories = [
     color: "from-purple-500 to-pink-500",
     bgColor: "bg-purple-50 dark:bg-purple-900/20",
     badges: [
-      "https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white",
-      "https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white",
-      "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
     ],
   },
   {
@@ -49,10 +50,10 @@ const skillCategories = [
     color: "from-orange-500 to-red-500",
     bgColor: "bg-orange-50 dark:bg-orange-900/20",
     badges: [
-      "https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900",
-      "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white",
-      "https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white",
-      "https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
     ],
   },
   {
@@ -61,11 +62,11 @@ const skillCategories = [
     color: "from-indigo-500 to-purple-500",
     bgColor: "bg-indigo-50 dark:bg-indigo-900/20",
     badges: [
-      "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white",
-      "https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black",
-      "https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=black",
-      "https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white",
-      "https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg",
     ],
   },
   {
@@ -74,8 +75,8 @@ const skillCategories = [
     color: "from-pink-500 to-rose-500",
     bgColor: "bg-pink-50 dark:bg-pink-900/20",
     badges: [
-      "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white",
-      "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
   },
 ];
@@ -118,17 +119,17 @@ const Badges = () => {
               </div>
 
               {/* Skills Badges */}
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 items-center justify-center">
                 {category.badges.map((badge, badgeIdx) => (
                   <div
                     key={badgeIdx}
-                    className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md"
+                    className="group relative overflow-hidden  transition-all duration-300 hover:scale-105 hover:shadow-md box-border p-2 border rounded-full shadow-md"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                     <Image
                       alt={`Skill badge ${badgeIdx}`}
                       src={badge}
-                      width={120}
+                      width={40}
                       height={35}
                       className="object-contain rounded-lg transition-transform duration-300 group-hover:scale-105"
                       draggable={false}

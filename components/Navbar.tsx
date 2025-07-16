@@ -6,27 +6,27 @@ import { Menu } from "lucide-react";
 const LinkLists = [
   {
     title: "home",
-    href: "#",
+    href: "/",
   },
   {
     title: "about",
-    href: "#about",
+    href: "/#about",
   },
   {
     title: "github",
-    href: "#github",
+    href: "/#github",
   },
   {
     title: "skills",
-    href: "#skills",
-  },{
-    title:"education",
-    href: "#education",
-
+    href: "/#skills",
+  },
+  {
+    title: "education",
+    href: "/#education",
   },
   {
     title: "projects",
-    href: "#projects",
+    href: "/#projects",
   },
   {
     title: "services",
@@ -74,6 +74,7 @@ const Navbar = () => {
             {LinkLists.map((link, index) => (
               <Link
                 key={index}
+                onClick={() => setOpen(false)}
                 href={link.href}
                 className="text-lg hover:text-blue-500 transition-all duration-200 border-b border-transparent hover:border-blue-500"
               >
