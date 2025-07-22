@@ -25,6 +25,10 @@ const LinkLists = [
     href: "/#education",
   },
   {
+    title: "experience",
+    href: "/#experience",
+  },
+  {
     title: "projects",
     href: "/#projects",
   },
@@ -37,7 +41,7 @@ const LinkLists = [
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <div className="p-5 flex justify-between items-center shadow-md border-b">
+    <div className="p-5 flex justify-between items-center shadow-md border-b fixed w-full bg-white z-50">
       {/* brand logo */}
       <div>
         <Link href={"/"} className="text-3xl font-semibold font-display">
