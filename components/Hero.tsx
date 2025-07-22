@@ -17,11 +17,11 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://github.com/codingdestro",
+    url: "https://instagram.com/anas_bin_naazir",
     icon: <Instagram className="text-2xl " />,
   },
   {
-    namespace: "Twitter",
+    name: "Twitter",
     url: "https://twitter.com/codingdestro",
     icon: <Twitter className="text-2xl" />,
   },
@@ -47,7 +47,7 @@ const Hero = () => {
 
           <div>
             <div className="flex gap-4 mt-4 items-center">
-              {socialLinks.map((link,id) => (
+              {socialLinks.map((link, id) => (
                 <Link
                   href={link.url}
                   target="_blank"
@@ -64,7 +64,7 @@ const Hero = () => {
           {/* CTA */}
           <div>
             <Link
-              href="/contact"
+              href="https://wa.me/9193195759"
               className="inline-block mt-6 px-6 py-3 bg-primary text-white rounded-full shadow-md hover:bg-primary-dark transition-colors duration-300 ease-in-out"
             >
               Contact Me
@@ -77,13 +77,13 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="overflow-hidden rounded-2xl w-sm border aspect-[1/1]">
+        <div className="overflow-hidden rounded-full w-sm md:w-lg border aspect-[1/1]">
           <Image
-            src="/me.jpeg"
+            src="/profilePic.png"
             alt="Hero Image"
             width={500}
             height={500}
-            className="rounded-lg shadow-lg w-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="rounded-lg shadow-lg scale-130 w-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </div>
       </div>
