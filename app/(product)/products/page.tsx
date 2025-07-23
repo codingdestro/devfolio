@@ -81,7 +81,7 @@ const ProductPage = () => {
     {
       icon: <Keyboard className="w-8 h-8" />,
       title: "Premium Build",
-      description: "CNC aluminum case with precision engineering",
+      description: "3D printed case with precision engineering",
       highlight: "Handcrafted",
     },
     {
@@ -146,7 +146,7 @@ const ProductPage = () => {
     },
     {
       category: "Build",
-      items: ["CNC aluminum case", "Premium switches", "Custom keycaps"],
+      items: ["3D printed case", "Premium switches", "Custom keycaps"],
     },
     {
       category: "Software",
@@ -331,7 +331,6 @@ const ProductPage = () => {
 
         {/* Configuration Options */}
         <section className="py-20 bg-muted/30" id="pricing">
-
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-4">
