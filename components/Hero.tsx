@@ -77,7 +77,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="overflow-hidden rounded-full w-sm md:w-lg border aspect-[1/1]">
+        <div className="overflow-hidden rounded-full w-xs md:w-lg border aspect-[1/1]">
           <Image
             src="/profilePic.png"
             alt="Hero Image"

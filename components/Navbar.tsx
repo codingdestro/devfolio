@@ -42,7 +42,7 @@ const LinkLists = [
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <div className="p-5 flex justify-between items-center shadow-md border-b fixed w-full bg-white z-50">
+    <div className="px-5 py-2 flex justify-between items-center shadow-md border-b fixed w-full bg-white z-50">
       {/* brand logo */}
       <div>
         <Link href={"/"} className="text-3xl font-semibold font-display">
@@ -81,24 +81,27 @@ const Navbar = () => {
           <Menu className="w-7 h-7 text-gray-700" />
         </button>
         {/* Mobile menu */}
-        {open && (
-          <div className="gap-5 fixed capitalize flex flex-col items-center w-full border z-50 left-0 top-16 bg-white p-5">
+        {
+          <div
+            data-active={open}
+            className="gap-10 fixed capitalize flex flex-col items-start w-0 p-0 data-[active=true]:w-2xs h-screen data-[active=true]:p-5 transition-all duration-300 ease-in-out overflow-clip border z-50 inset-0 top-16 bg-white  "
+          >
             {LinkLists.map((link, index) => (
               <Link
                 key={index}
                 onClick={() => setOpen(false)}
                 href={link.href}
-                className="text-lg hover:text-blue-500 transition-all duration-200 border-b border-transparent hover:border-blue-500"
+                className="text-xl font-semibold hover:text-blue-500 transition-all duration-200 border-b border-transparent hover:border-blue-500"
               >
                 {link.title}
               </Link>
             ))}
           </div>
-        )}
+        }
         {/* menu overlay */}
         {open && (
           <div
-            className="fixed inset-0 backdrop-blur-sm opacity-50 z-40"
+            className="fixed inset-0 opacity-50 z-40"
             onClick={() => setOpen(false)}
           ></div>
         )}
