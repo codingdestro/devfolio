@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import Image from "next/image";
 
 const LinkLists = [
   {
@@ -33,8 +34,8 @@ const LinkLists = [
     href: "/#projects",
   },
   {
-    title: "services",
-    href: "/",
+    title: "products",
+    href: "/products",
   },
 ];
 
@@ -45,6 +46,13 @@ const Navbar = () => {
       {/* brand logo */}
       <div>
         <Link href={"/"} className="text-3xl font-semibold font-display">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={48}
+            height={48}
+            className="inline-block mr-2 scale-110"
+          />
           CodingDestro
         </Link>
       </div>
