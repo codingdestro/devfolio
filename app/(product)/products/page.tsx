@@ -21,34 +21,44 @@ const ProductPage = () => {
 
   const productImages = [
     {
-      src: "/product/kbd.png",
+      src: "/product/IMG_20250723_181623-removebg-preview.png",
       title: "Complete Split Setup",
       description: "Ergonomic 42-key split layout",
     },
     {
-      src: "/product/kbd2.png",
+      src: "/product/IMG_20250723_181655-removebg-preview.png",
       title: "Complete Split Setup",
       description: "Ergonomic 42-key split layout",
     },
     {
-      src: "/product/Gateron-G-Pro-3.0-Switch-Set-landing-page1.jpg",
-      title: "Premium Switches",
-      description: "Gateron G Pro 3.0 switches",
+      src: "/product/IMG_20250723_181728-removebg-preview.png",
+      title: "Left Split PCB",
+      description: "Custom designed for ergonomic typing",
+    },
+    {
+      src: "/product/IMG_20250723_181815-removebg-preview.png",
+      title: "Right Split PCB",
+      description: "Connects both halves seamlessly",
+    },
+    {
+      src: "/product/IMG_20250723_182020-removebg-preview.png",
+      title: "TRRS Cable",
+      description: "Connect both halves seamlessly",
     },
     {
       src: "/product/300px-RP2040-Zero-1.jpg",
-      title: "RP2040 MCU",
+      title: "RP2040-Zero",
       description: "Powerful microcontroller",
     },
     {
-      src: "/product/qmk.png",
-      title: "QMK Firmware",
-      description: "Unlimited customization",
+      src: "/product/switches.jpeg",
+      title: "Gatron 3.0 Blue Switches",
+      description: "Tactile and clicky switches",
     },
     {
-      src: "/product/Gateron-G-Pro-3.0-Switch-BL-1-jpg.webp",
-      title: "Hot-Swap Ready",
-      description: "No soldering required",
+      src: "/product/IMG_1530-scaled.jpg",
+      title: "DSA Keycaps",
+      description: "Custom keycap set",
     },
   ];
 
