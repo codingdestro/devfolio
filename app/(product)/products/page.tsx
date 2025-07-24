@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import ProductNavbar from "@/components/ProductNavbar";
+import Link from "next/link";
 
 const ProductPage = () => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -496,8 +497,10 @@ const ProductPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="px-8 py-6 text-lg">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Start Custom Order
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                  <Link href="https://wa.me/9193195759" target="_blank">
+                    Start Custom Order
+                  </Link>
                 </Button>
                 <Button
                   variant="outline"
