@@ -204,9 +204,9 @@ const ProductPage = () => {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0  bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <div className="bg-background/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <div className="bg-background/10  hidden md:block backdrop-blur-sm rounded-xl p-6 border border-white/20">
                       <h3 className="text-2xl font-bold mb-2 text-white">
                         {productImages[activeImageIndex].title}
                       </h3>
