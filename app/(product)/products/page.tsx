@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import ProductNavbar from "@/components/ProductNavbar";
+import Link from "next/link";
 
 const ProductPage = () => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -204,9 +205,9 @@ const ProductPage = () => {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0  bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <div className="bg-background/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <div className="bg-background/10  hidden md:block backdrop-blur-sm rounded-xl p-6 border border-white/20">
                       <h3 className="text-2xl font-bold mb-2 text-white">
                         {productImages[activeImageIndex].title}
                       </h3>
@@ -496,8 +497,10 @@ const ProductPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="px-8 py-6 text-lg">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Start Custom Order
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                  <Link href="https://wa.me/9193195759" target="_blank">
+                    Start Custom Order
+                  </Link>
                 </Button>
                 <Button
                   variant="outline"
