@@ -172,7 +172,7 @@ export default function Resume() {
             <h1 className="text-lg font-bold">EDUCATION</h1>
             <div className="text-md">
               <h1 className="font-semibold">
-                St. Andrew's Institute of Technology and Management
+                St. Andrew&apos;s Institute of Technology and Management
               </h1>
               <p>B.Tech in computer science and engineering | 2024 - 28</p>
             </div>
