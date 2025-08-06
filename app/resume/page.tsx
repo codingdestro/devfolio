@@ -1,13 +1,13 @@
 import "@/style/resume.css";
 import React from "react";
 import Link from "next/link";
-import { GithubIcon, Link as Anch } from "lucide-react";
+import { Github, Link as Anch } from "lucide-react";
 
 const GithubLink = ({ gitUrl, url }: { gitUrl?: string; url?: string }) => {
   return (
     <span className="flex items-center gap-2 text-accent">
       <Link href={gitUrl || "https://github.com/codingdestro"}>
-        <GithubIcon className="w-5 h-5" />
+        <Github className="w-5 h-5" />
       </Link>
       <Link href={url || "https://dev.codingdestro.fun"}>
         <Anch className="w-5 h-5" />
@@ -72,7 +72,9 @@ const page = () => {
           </h2>
           <div className="text-sm">
             <div className="flex items-center justify-between">
-              <h1 className="font-semibold capitalize">Programming Languages:</h1>
+              <h1 className="font-semibold capitalize">
+                Programming Languages:
+              </h1>
               <span>
                 <strong>JavaScript, C, C++, Rust</strong>, HTML, CSS
               </span>
