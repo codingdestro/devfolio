@@ -2,23 +2,27 @@ import { LucideExternalLink, LucideGithub } from "lucide-react";
 import Link from "next/link";
 
 const SKILLS = {
-  frontend: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
-  backend: ["Node.js", "Express", "MongoDB", "GraphQL"],
-  tools: ["Git", "GitHub", "VSCode", "Figma", "Postman"],
-  "computer science": ["Data Structures", "Algorithms", "Database Design"],
+  frontend: ["HTML + ", "CSS + ", "JavaScript + ", "React + ", "Next.js"],
+  backend: ["Node.js + ", "Express + ", "MongoDB + ", "GraphQL"],
+  tools: ["Git + ", "GitHub + ", "CI/CD + ", "Docker + ", "Kubernetes"],
+  "computer science": [
+    "Data Structures + ",
+    "Algorithms + ",
+    "Database Design",
+  ],
   "soft skills": [
-    "Deliver Results",
-    "Teamwork",
-    "Communication",
+    "Deliver Results + ",
+    "Teamwork + ",
+    "Communication + ",
     "Adaptability",
   ],
 };
 export default function Resume() {
   return (
-    <section className="min-h-[11in] w-[8in] border rounded-lg p-3 font-sans">
+    <section className="min-h-[11in] w-[8.2in] rounded-lg font-sans">
       {/*header*/}
       <div className="border-b border-b-black py- mb-2 text-center">
-        <h1 className="text-3xl font-bold uppercase">MOHD ANAS</h1>
+        <h1 className="text-3xl font-bold uppercase font-sans">MOHD ANAS</h1>
         <p className="font-semibold mb-2">Full Stack Developer</p>
         <div className="flex text-md items-center justify-center gap-1">
           <p>+91 9193195759</p>
@@ -38,15 +42,15 @@ export default function Resume() {
             href="https://github.com/codingdestro"
             className="text-blue-500"
           >
-            Github
+            GitHub
           </Link>
         </div>
       </div>
       {/*skills*/}
-      <section className="grid grid-cols-3 gap-2">
-        <div className="col-span-2 flex flex-col gap-3">
+      <section className="grid grid-cols-3 gap-1">
+        <div className="col-span-2 flex flex-col gap-1">
           <div>
-            <h1 className="text-lg font-bold">SKILLS</h1>
+            <h1 className="text-lg font-bold">TECHNICAL COMPETENCIES</h1>
             <div className="text-md">
               {Object.entries(SKILLS).map(([category, skills]) => (
                 <div key={category} className="flex items-center flex-wrap">
@@ -64,26 +68,40 @@ export default function Resume() {
           </div>
           {/*experience*/}
           <div>
-            <h1 className="text-lg font-bold mb-2">EXPERIENCE</h1>
+            <h1 className="text-lg font-bold mb-1">PROFESSIONAL EXPERIENCE</h1>
             <div>
               <h1 className="font-bold font-sans">
-                OnceMore.ltd | Next.js, React.js, AWS, TypeScript, REST
+                OnceMore Ltd. | Next.js, React.js, Amazon Web Services (AWS),
+                TypeScript, Representational State Transfer (REST)
               </h1>
               <p className="text-md font-semibold ml-1">
                 Full Stack Developer | Freelance | 2025 - Present
               </p>
               <ul className="list-disc pl-4 text-md">
                 <li>
-                  Developed and maintained Next.js and React.js applications
+                  Developed and maintained <strong>Next.js</strong> and{" "}
+                  <strong>React.js</strong> applications
                 </li>
-                <li>Implemented RESTful APIs using TypeScript</li>
-                <li>Deployed applications on AWS with CI/CD pipelines</li>
+                <li>
+                  Implemented{" "}
+                  <strong>
+                    RESTful Application Programming Interfaces (APIs)
+                  </strong>
+                  using <strong>TypeScript</strong>
+                </li>
+                <li>
+                  Deployed applications on <strong>AWS</strong> with{" "}
+                  <strong>
+                    Continuous Integration/Continuous Deployment (CI/CD)
+                  </strong>{" "}
+                  pipelines
+                </li>
               </ul>
             </div>
           </div>
           {/*Projects*/}
           <div>
-            <h1 className="text-lg font-bold mb-2">PROJECTS</h1>
+            <h1 className="text-lg font-bold mb-2">TECHNICAL PROJECTS</h1>
             <div>
               <h1 className="font-bold font-sans flex items-center justify-between pr-5">
                 Calculator
@@ -101,14 +119,21 @@ export default function Resume() {
               </p>
               <ul className="list-disc pl-4 text-md">
                 <li>
-                  Architected and developed a comprehensive multi-purpose
-                  calculator suite
+                  <strong>Architected and developed</strong> a comprehensive
+                  multi-purpose calculator suite with{" "}
+                  <strong>15+ calculator types</strong>
                 </li>
                 <li>
-                  Basic Arithmetic, Age Calculation, Unit Conversion, and
-                  Financial Tools.
+                  <strong>
+                    Basic Arithmetic, Age Calculation, Unit Conversion, and
+                    Financial Tools
+                  </strong>{" "}
+                  serving <strong>25+ unique calculations</strong>
                 </li>
-                <li>Build with React.js + TypeScript</li>
+                <li>
+                  Built with <strong>React.js + TypeScript</strong> using{" "}
+                  <strong>20+ reusable components</strong>
+                </li>
               </ul>
             </div>
             <div className="mt-3">
@@ -126,17 +151,24 @@ export default function Resume() {
                 </span>
               </h1>
               <p className="text-md capitalize font-semibold ml-1">
-                full stack e-commerce web app | 2024
+                Full-stack e-commerce web app | 2024
               </p>
               <ul className="list-disc pl-4 text-md">
                 <li>
-                  Engineered a scalable and secure backend using Node.js and
-                  Express.js.
+                  <strong>Engineered a scalable and secure backend</strong> with{" "}
+                  <strong>25+ API endpoints</strong> using{" "}
+                  <strong>Node.js</strong> and <strong>Express.js</strong>
                 </li>
                 <li>
-                  Implemented a robust frontend using React.js and TypeScript.
+                  <strong>Implemented a robust frontend</strong> with{" "}
+                  <strong>40+ components</strong> using{" "}
+                  <strong>React.js</strong> and <strong>TypeScript</strong>
                 </li>
-                <li>Integrated user authentication using JWT.</li>
+                <li>
+                  <strong>Integrated user authentication</strong> supporting{" "}
+                  <strong>500+ user registrations</strong> using{" "}
+                  <strong>JSON Web Tokens (JWT)</strong>
+                </li>
               </ul>
             </div>
 
@@ -160,45 +192,60 @@ export default function Resume() {
                 Basic Projects Gallery | 2024
               </p>
               <ul className="list-disc pl-4 text-md">
-                <li>Vanilla Projects made with html, css and javascript.</li>
-                <li>Add javascript games.</li>
-                <li>Used data structure and algorithms</li>
+                <li>
+                  <strong>12+ Vanilla Projects</strong> made with{" "}
+                  <strong>HTML, CSS, and JavaScript</strong>
+                </li>
+                <li>
+                  Added <strong>5+ JavaScript games</strong> with interactive
+                  gameplay
+                </li>
+                <li>
+                  Implemented <strong>8+ data structures and algorithms</strong>{" "}
+                  across projects
+                </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-8">
           <div className="flex flex-col gap-3">
-            <h1 className="text-lg font-bold">EDUCATION</h1>
+            <h1 className="text-lg font-bold">EDUCATION BACKGROUND</h1>
             <div className="text-md">
               <h1 className="font-semibold">
                 St. Andrew&apos;s Institute of Technology and Management
               </h1>
-              <p>B.Tech in computer science and engineering | 2024 - 28</p>
+              <p>
+                Bachelor of Technology (B.Tech) in Computer Science and
+                Engineering | 2024 - 28
+              </p>
             </div>
             <div className="text-md">
               <h1 className="font-semibold">
-                National Institute of Technology, Noida
+                National Institute of Open Schooling(NIOS), Noida
               </h1>
-              <p>Sen. Secondary School | 2023</p>
+              <p>Senior Secondary School | 2023</p>
             </div>
           </div>
           {/*Certifications*/}
           <div className="flex flex-col gap-3">
-            <h1 className="text-lg font-bold uppercase">Certifications</h1>
+            <h1 className="text-lg font-bold uppercase">
+              Certifications & Achievements
+            </h1>
             <div className="text-md">
               <h1 className="font-semibold">
                 Smart India Hackathon - National Level Participant
               </h1>
               <p>
-                Build full stack web applications using React and Node.js | Sept
-                2024
+                Built <strong>full-stack web applications</strong> using{" "}
+                <strong>React and Node.js</strong> | Sept 2024
               </p>
             </div>
             <div className="text-md">
               <h1 className="font-semibold">C Programming Certification</h1>
               <p>
-                Top 1 student who completed the CodeTantra course | May 2025
+                <strong>Top 1 student</strong> who completed the CodeTantra
+                course | May 2025
               </p>
             </div>
           </div>
@@ -206,7 +253,7 @@ export default function Resume() {
           <div className="flex flex-col gap-3">
             <h1 className="text-lg font-bold uppercase">Coursework</h1>
             <div className="text-md font-semibold flex flex-col gap-1  capitalize">
-              <span>Data structures and Algorithms</span>
+              <span>Data Structures and Algorithms</span>
               <span>Mathematics</span>
               <span>Mobile App Development</span>
               <span>Web Development</span>
