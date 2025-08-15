@@ -83,6 +83,9 @@ export default function Resume() {
                   <strong>React.js</strong> applications
                 </li>
                 <li>
+                  100+ customer interactions handled, ensuring high satisfaction
+                </li>
+                <li>
                   Implemented{" "}
                   <strong>
                     RESTful Application Programming Interfaces (APIs)
@@ -109,7 +112,7 @@ export default function Resume() {
                   <Link href={"https://github.com/codingdestro/calculator"}>
                     <LucideGithub className="w-7 h-7 border rounded-full p-1" />
                   </Link>
-                  <Link href={"https://calculator.codingdestro.fun"}>
+                  <Link href={"https://calc.codingpirate.site"}>
                     <LucideExternalLink className="w-7 h-7 border rounded-full p-1" />
                   </Link>
                 </span>
@@ -145,7 +148,7 @@ export default function Resume() {
                   >
                     <LucideGithub className="w-7 h-7 border rounded-full p-1" />
                   </Link>
-                  <Link href={"https://gadgetbucket.codingdestro.fun"}>
+                  <Link href={"https://gadgetbucket.codingpirate.site"}>
                     <LucideExternalLink className="w-7 h-7 border rounded-full p-1" />
                   </Link>
                 </span>
